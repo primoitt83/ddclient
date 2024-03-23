@@ -1,0 +1,18 @@
+version: '3.3'
+
+services:
+  ddclient:
+    image: lscr.io/linuxserver/ddclient
+    container_name: ddclient
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/Sao_Paulo
+    volumes:
+      - ./config:/config
+    restart: always
+    networks:
+      ddclient:
+
+networks:
+  ddclient:

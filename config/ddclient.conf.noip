@@ -1,0 +1,13 @@
+daemon=300
+syslog=yes
+pid=/var/run/ddclient/ddclient.pid
+use=web
+web=icanhazip.com
+
+## NoIP (noip.com)
+protocol=noip,  \
+ssl=yes,  \
+server=dynupdate.no-ip.com,  \
+login=myemail.email.com,  \
+password=myPassword  \
+mydns.ddns.net
